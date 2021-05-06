@@ -20,7 +20,4 @@ class Solution:
             else:
                 sum = sum + int(change.get(s[i]))
 
-        print(sum)
-
-r = Solution()
-r.romanToInt('XL')
+        return sum
