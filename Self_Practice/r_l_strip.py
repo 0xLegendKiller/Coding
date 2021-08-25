@@ -12,3 +12,14 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> res.lstrip()     
 'Adi'
 >>>  
+# strip characters
+>>> res = "https://adityasrivastava.com"
+>>> res.rstrip(".com")
+'https://adityasrivastava'
+# _m , _co ends with m  and (c then o) respectively, and rstrip removes characters m, c, o, .
+>>> res = "https://adityasrivastava_m.com" 
+>>> res.rstrip(".com")
+'https://adityasrivastava_'
+>>> res = "https://adityasrivastava_co.com" 
+>>> res.rstrip(".com")
+'https://adityasrivastava_'
