@@ -15,6 +15,11 @@
 # Goodbye!
 # PS D:\Machines\Languages\VSC>
 
+# After applying opertions restrcitions
+# PS D:\Machines\Languages\VSC> & C:/Users/Shivam/AppData/Local/Programs/Python/Python38/python.exe d:/Machines/Languages/VSC/tmp.py --number1 4 --number2 5 --operations divide
+# usage: tmp.py [-h] [--number1 NUMBER1] [--number2 NUMBER2] [--operations {add,subs,multi}]
+# tmp.py: error: argument --operations: invalid choice: 'divide' (choose from 'add', 'subs', 'multi')
+
 import argparse
 
 parser = argparse.ArgumentParser()
@@ -23,6 +28,10 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--number1", help="Number 1 Here!")
 parser.add_argument("--number2", help="Number 2 Here!")
 parser.add_argument("--operations", help="Operations to perform")
+
+# To restrict choices
+# parser.add_argument("--operations", help="Operations to perform", \
+#      choices=["add", "subs","multi"])
 
 args = parser.parse_args()
 # print(args)
