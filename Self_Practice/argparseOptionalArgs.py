@@ -15,7 +15,7 @@
 # Goodbye!
 # PS D:\Machines\Languages\VSC>
 
-# After applying opertions restrcitions
+# After applying operations restrcitions
 # PS D:\Machines\Languages\VSC> & C:/Users/Shivam/AppData/Local/Programs/Python/Python38/python.exe d:/Machines/Languages/VSC/tmp.py --number1 4 --number2 5 --operations divide
 # usage: tmp.py [-h] [--number1 NUMBER1] [--number2 NUMBER2] [--operations {add,subs,multi}]
 # tmp.py: error: argument --operations: invalid choice: 'divide' (choose from 'add', 'subs', 'multi')
