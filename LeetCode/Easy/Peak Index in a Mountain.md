@@ -16,6 +16,8 @@ https://leetcode.com/problems/peak-index-in-a-mountain-array/
 
 ### Solution :- 
 
+Method 1 - Binary Search
+
 ```java
 class Solution {
     public int peakIndexInMountainArray(int[] arr) {
@@ -30,6 +32,25 @@ class Solution {
             }
         }
         return start;
+    }
+}
+```
+
+Method 2 - Linear Search
+
+```java
+class Solution {
+    public int peakIndexInMountainArray(int[] arr) {
+        int max = 0;
+        int index = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if(max < arr[i]){
+                max = arr[i]; 
+                index = i;
+            }
+        }
+        // System.out.println(arr[index]);
+        return index;
     }
 }
 ```
